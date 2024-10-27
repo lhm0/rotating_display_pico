@@ -1,0 +1,66 @@
+;
+; Rotating Display pico
+; LED multiplexing
+;
+; Ludwin Monz, 2024
+
+; RD56m uses a LED matrix with 7 rows and 8 columns. Only one row can be selected at a time. 
+; The data for the 8 LEDs of the row is set by the 8 columns.
+;
+; row selection: GPIO 8, 9, 10. Set binary number 0, 1, ..., 6
+; colums: GPIO 0, 1, 2, 3, 4, 5, 6, 7. Turn on and off the corresponding LEDs of the selected row 
+; 
+; GPIO 8, 9, 10 are the SET group of pins. They control the rows of the array by setting the row number
+; GPIO 0, ..., 7 are the OUT group of pins. They control the columns of the LED array
+; PIO reads LED data from the FIFO, sets the row number, outputs 8 bits of the LED data to the OUT pins. 
+; Then, PIO waits 31 cycles. Afterwards, PIO moves on to the next row.
+;
+; The two FIFOs are cascaded as OUTPUT FIFOs, which gives us 2 x 4 x 32 bits = 256 bits.
+; Once the FIFO is empty, a IRQ is generated, which needs to re-fill the FIFO with the next set of LED data.
+; 
+; If a cycle is complete, PIO will select row 7 which is not used (this turns off all the LEDs)
+;
+; FIFO data sets (7 bytes = 56 bits)
+; bytes 0...6: LEDs 0,...,55
+;
+;
+
+.program LED_multiplexer
+.wrap_target
+    pull block              ; read 32 bits from FIFO to OSR. Wait, if no data is available
+
+    out pins, 8         ; output column data of row 0
+    set pins, 0 [10]         ; select row0, delay 31 cycles
+    set pins, 7             ; (not used, therefore LEDs -> off)
+
+    out pins, 8         ; output column data of row 0
+    set pins, 1 [10]         ; select row1, delay 31 cycles
+    set pins, 7            ; (not used, therefore LEDs -> off)
+
+    out pins, 8         ; output column data of row 0
+    set pins, 2 [10]         ; select row2, delay 31 cycles
+    set pins, 7         ; (not used, therefore LEDs -> off)
+
+    out pins, 8         ; output column data of row 0
+    set pins, 3 [10]         ; select row3, delay 31 cycles
+    set pins, 7         ; (not used, therefore LEDs -> off)
+
+    pull
+    mov x, status           ; status to be defined with sm_config_set_mov_status (&c, STATUS_TX_LESSTHAN , 1 )
+    jmp !x next_byte        ; When fifo is NOT empty skip IRQ request
+    irq 0                   ; when fifo is empty, fire an interrupt
+next_byte:
+
+    out pins, 8          ; output column data of row 0
+    set pins, 4 [10]        ; select row0, delay 31 cycles
+    set pins, 7             ; (not used, therefore LEDs -> off)
+
+    out pins, 8         ; output column data of row 0
+    set pins, 5 [10]        ; select row1, delay 31 cycles
+    set pins, 7             ; (not used, therefore LEDs -> off)
+
+    out pins, 8           ; output column data of row 0
+    set pins, 6 [10]        ; select row2, delay 31 cycles
+    set pins, 7             ; all LEDs off
+
+.wrap

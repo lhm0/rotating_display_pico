@@ -1,0 +1,38 @@
+;
+; Rotating Display pico
+; LED multiplexing
+;
+; Ludwin Monz, 2024
+;
+; The LEDs are arranged in a matrix:
+; columns pins 0, 1, ..., 7
+; row pins 8, 9, ....15
+;
+; LED_MUX on pushes the column and row data to the pins and manages the display time and timing.
+;
+; out base = 0, 16 bits
+;
+.program LED_MUX
+.wrap_target
+
+    set y, 0                ; clear y
+    mov osr, y;             ; at this point, y=0. Clear osr.
+    out pins, 16 [31]           ; all LEDs off
+
+    pull block              ; read next 32 bit word
+
+    mov x, status [31]          ; status to be defined with sm_config_set_mov_status (&c, STATUS_TX_LESSTHAN , 1 )
+    jmp !x next_byte        ; When fifo is NOT empty skip IRQ request
+    irq 0                   ; when fifo is empty, fire an interrupt
+next_byte:
+
+    out pins, 16 [31]           ; output next LED group
+    mov x, osr;             ; save osr
+    set y, 0                ; clear y
+    mov osr, y;             ; Clear osr.
+    out pins, 16 [31]           ; all LEDs off
+    mov osr, x [31]           ; restore osr
+
+    out pins, 16 [31]           ; output next LED group
+
+.wrap

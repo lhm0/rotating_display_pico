@@ -1,0 +1,18 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+C1,MKP10_630V,1,33nF,
+C2,CP_Radial_D4.0mm_P1.50mm,1,"10µ, 50V",C13585
+C3,CP_Radial_D6.3mm_P2.50mm,1,100µ,
+"C4, C5",C_Rect_L7.0mm_W2.0mm_P5.00mm,2,100nF,
+C6,CP_Radial_D4.0mm_P1.50mm,1,10µ,
+"D2, D3",D_DO-41_SOD81_P10.16mm_Horizontal,2,1N4001,
+J2,GRAVITECH_CON-SOCJ-2155,1,Barrel_Jack_Switch_Pin3Ring,
+L1,L_vertical12,1,330µH,
+M1,motor_tray,1,Motor_DC,
+"Q1, Q2",TO220_vertikal,2,NPN,
+R2,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,1,2k2,
+R3,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,1,120,
+R4,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,1,47,
+RV1,Poti_10mm,1,470,
+SW1,Switch1,1,SW_DPDT_x2,
+"U1, U2, U3, U4, U5, U6",Pin_2mm,6,Pin-Connector,
+U7,SOT-223-3_TabPin2,1,AP1117-ADJ,

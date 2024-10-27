@@ -1,0 +1,57 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 371a0264-d213-4408-8321-f20c79ef5279)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (text "LEDs" (at 86.36 71.12 0)
+    (effects (font (size 4 4) (thickness 0.8) bold) (justify left bottom))
+    (uuid 052051ce-0c53-4492-9df3-0e87b9065643)
+  )
+  (text "controller" (at 78.74 48.26 0)
+    (effects (font (size 4 4) (thickness 0.8) bold) (justify left bottom))
+    (uuid a7b4cc7b-d4d8-47b7-91be-3939cbac69df)
+  )
+
+  (sheet (at 41.91 60.96) (size 113.03 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 26d7dc0b-b186-4baf-9ac6-357abc24ebc5)
+    (property "Sheetname" "LED1" (at 41.91 60.2484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "LED1.kicad_sch" (at 41.91 76.7846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "RDpico_display"
+        (path "/371a0264-d213-4408-8321-f20c79ef5279" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 41.91 38.1) (size 113.03 13.97) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid bf1c447b-9899-4b34-b579-100c32fb3234)
+    (property "Sheetname" "controller" (at 41.91 37.3884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "controller.kicad_sch" (at 41.91 52.6546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "RDpico_display"
+        (path "/371a0264-d213-4408-8321-f20c79ef5279" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
