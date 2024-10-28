@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/ludwin/Elektronik/rotating_display_pico/RDpico_electronics/RDpico_PS/RD56m_PS_V1.kicad_sch</source>
+    <date>2024 October 28, Monday 11:48:00</date>
+    <tool>Eeschema 7.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>RD56m_PS_V1</title>
+        <company>Ludwin Monz</company>
+        <rev>V1</rev>
+        <date>2024-10-16</date>
+        <source>RD56m_PS_V1.kicad_sch</source>
+        <comment number="1" value="you may not use the material for commercial purposes"/>
+        <comment number="2" value="you may use non-commercially, adapt, share alike"/>
+        <comment number="3" value="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <comment number="4" value="License: Creative Commons Attribution-Non-Commercial (CC BY-NC-SA)"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>33nF</value>
+      <footprint>my_footprints:MKP10_630V</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ff40853</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10µ, 50V</value>
+      <footprint>Capacitor_THT:CP_Radial_D4.0mm_P1.50mm</footprint>
+      <fields>
+        <field name="LCSC">C13585</field>
+      </fields>
+      <libsource lib="RD56c_PS_V1-rescue" part="CP-Device" description=""/>
+      <property name="LCSC" value="C13585"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ff1aa83</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100µ</value>
+      <footprint>Capacitor_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
+      <libsource lib="RD40_PS_V1-rescue" part="CP-Device" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ce27fdb-044b-4a03-812c-7432cd326066</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>40f62021-d4c7-4a05-aeae-b3370c055148</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b1588636-4f0f-41c2-abc1-54e0f97b966d</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>10µ</value>
+      <footprint>Capacitor_THT:CP_Radial_D4.0mm_P1.50mm</footprint>
+      <libsource lib="RD40_PS_V1-rescue" part="CP-Device" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8c05aa1-d3c9-492d-b94e-12a4a2d5ea51</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>1N4001</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <property name="ki_keywords" value="diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11c9f11a-927e-44fe-a2a9-6f234d7f83a3</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>1N4001</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <property name="ki_keywords" value="diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6767af54-2f80-4b36-b8c5-9609ed2703aa</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Barrel_Jack_Switch_Pin3Ring</value>
+      <footprint>my_footprints:GRAVITECH_CON-SOCJ-2155</footprint>
+      <libsource lib="Connector" part="Barrel_Jack_Switch_Pin3Ring" description="DC Barrel Jack with an internal switch"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="DC Barrel Jack with an internal switch"/>
+      <property name="ki_keywords" value="DC power barrel jack connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89bf3591-5019-4bdc-8d50-42a283a69799</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>330µH</value>
+      <footprint>my_footprints:L_vertical12</footprint>
+      <libsource lib="my_symbols" part="coil_2size" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ff3d135</tstamps>
+    </comp>
+    <comp ref="M1">
+      <value>Motor_DC</value>
+      <footprint>my_footprints:motor_tray</footprint>
+      <libsource lib="Motor" part="Motor_DC" description="DC Motor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="DC Motor"/>
+      <property name="ki_keywords" value="DC Motor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8c07fe5e-430f-4021-b676-e0a19eb119d8</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>NPN</value>
+      <footprint>my_footprints:TO220_vertikal</footprint>
+      <fields>
+        <field name="Sim.Device">NPN</field>
+        <field name="Sim.Pins">1=B 2=C 3=E</field>
+        <field name="Sim.Type">TIP31</field>
+      </fields>
+      <libsource lib="New_Library" part="TIP31" description="Bipolar transistor symbol for simulation only, substrate tied to the emitter"/>
+      <property name="Sim.Device" value="NPN"/>
+      <property name="Sim.Type" value="TIP31"/>
+      <property name="Sim.Pins" value="1=B 2=C 3=E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="Bipolar transistor symbol for simulation only, substrate tied to the emitter"/>
+      <property name="ki_keywords" value="simulation"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99212d7f-8313-45cb-a730-ef157201c163</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>NPN</value>
+      <footprint>my_footprints:TO220_vertikal</footprint>
+      <fields>
+        <field name="Sim.Device">NPN</field>
+        <field name="Sim.Pins">1=B 2=C 3=E</field>
+        <field name="Sim.Type">TIP31</field>
+      </fields>
+      <libsource lib="New_Library" part="TIP31" description="Bipolar transistor symbol for simulation only, substrate tied to the emitter"/>
+      <property name="Sim.Device" value="NPN"/>
+      <property name="Sim.Type" value="TIP31"/>
+      <property name="Sim.Pins" value="1=B 2=C 3=E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="Bipolar transistor symbol for simulation only, substrate tied to the emitter"/>
+      <property name="ki_keywords" value="simulation"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f6da5924-88c1-4b45-b3e5-41b59be1d5dc</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>2k2</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>161a412c-dc4f-4d40-beaf-b30e4dd0dea1</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>120</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5380da1b-e036-470f-afa6-afe388be66be</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>47</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f114021c-d8f0-4856-9496-083ff084c488</tstamps>
+    </comp>
+    <comp ref="RV1">
+      <value>470</value>
+      <footprint>my_footprints:Poti_10mm</footprint>
+      <libsource lib="RD40_PS_V1-rescue" part="R_POT-Device" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>20822e97-9520-404c-a25a-8dcf9a048c2a</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_DPDT_x2</value>
+      <footprint>my_footprints:Switch1</footprint>
+      <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="Switch, dual pole double throw, separate symbols"/>
+      <property name="ki_keywords" value="switch dual-pole double-throw DPDT spdt ON-ON"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2ba5ff7a-dc2c-4b43-99bb-54cf8953d243</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>Pin-Connector</value>
+      <footprint>my_footprints:Pin_2mm</footprint>
+      <libsource lib="my_symbols" part="Pin-Connector" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000064691a8a</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>Pin-Connector</value>
+      <footprint>my_footprints:Pin_2mm</footprint>
+      <libsource lib="my_symbols" part="Pin-Connector" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006469a86f</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>Pin-Connector</value>
+      <footprint>my_footprints:Pin_2mm</footprint>
+      <libsource lib="my_symbols" part="Pin-Connector" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006469da7f</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>Pin-Connector</value>
+      <footprint>my_footprints:Pin_2mm</footprint>
+      <libsource lib="my_symbols" part="Pin-Connector" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006469ee39</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>Pin-Connector</value>
+      <footprint>my_footprints:Pin_2mm</footprint>
+      <libsource lib="my_symbols" part="Pin-Connector" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000646a0b50</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>Pin-Connector</value>
+      <footprint>my_footprints:Pin_2mm</footprint>
+      <libsource lib="my_symbols" part="Pin-Connector" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000646a1ff4</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>AP1117-ADJ</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>http://www.diodes.com/datasheets/AP1117.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="AP1117-ADJ" description="1A Low Dropout regulator, positive, adjustable output, SOT-223"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RD56m_PS_V1.kicad_sch"/>
+      <property name="ki_description" value="1A Low Dropout regulator, positive, adjustable output, SOT-223"/>
+      <property name="ki_keywords" value="linear regulator ldo adjustable positive obsolete"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04d50440-ab8b-4a59-b04b-ac235547debe</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Barrel_Jack_Switch_Pin3Ring">
+      <description>DC Barrel Jack with an internal switch</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack_Switch_Pin3Ring</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N4001">
+      <description>50V 1A General Purpose Rectifier Diode, DO-41</description>
+      <docs>http://www.vishay.com/docs/88503/1n4001.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4001</field>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+        <field name="Datasheet">http://www.vishay.com/docs/88503/1n4001.pdf</field>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Motor" part="Motor_DC">
+      <description>DC Motor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>PinHeader*P2.54mm*</fp>
+        <fp>TerminalBlock*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">Motor_DC</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="New_Library" part="TIP31">
+      <description>Bipolar transistor symbol for simulation only, substrate tied to the emitter</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">NPN</field>
+        <field name="Datasheet">~</field>
+        <field name="Sim.Device">NPN</field>
+        <field name="Sim.Type">TIP31</field>
+        <field name="Sim.Pins">1=B 2=C 3=E</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="C" type="open_collector"/>
+        <pin num="3" name="E" type="open_emitter"/>
+      </pins>
+    </libpart>
+    <libpart lib="RD40_PS_V1-rescue" part="CP-Device">
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Device_CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RD40_PS_V1-rescue" part="R_POT-Device">
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">Device_R_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RD56c_PS_V1-rescue" part="CP-Device">
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Device_CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AP1117-ADJ">
+      <description>1A Low Dropout regulator, positive, adjustable output, SOT-223</description>
+      <docs>http://www.diodes.com/datasheets/AP1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*TabPin2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP1117-ADJ</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+        <field name="Datasheet">http://www.diodes.com/datasheets/AP1117.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADJ" type="input"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DPDT_x2">
+      <description>Switch, dual pole double throw, separate symbols</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW*DPDT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DPDT_x2</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+        <pin num="5" name="B" type="passive"/>
+        <pin num="6" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="my_symbols" part="Pin-Connector">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Pin-Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="my_symbols" part="coil_2size">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">coil_2size</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="input"/>
+        <pin num="3" name="3" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Diode.kicad_sym</uri>
+    </library>
+    <library logical="Motor">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Motor.kicad_sym</uri>
+    </library>
+    <library logical="New_Library">
+      <uri>/Users/ludwin/Library/CloudStorage/Dropbox/Ludwin/Elektronik/KICAD/Library/my_symbols2/New_Library.kicad_sym</uri>
+    </library>
+    <library logical="RD40_PS_V1-rescue">
+      <uri>/Users/ludwin/Elektronik/rotating_display_pico/RDpico_electronics/RDpico_PS/RD40_PS_V1-rescue.kicad_sym</uri>
+    </library>
+    <library logical="RD56c_PS_V1-rescue">
+      <uri>/Users/ludwin/Elektronik/rotating_display_pico/RDpico_electronics/RDpico_PS/RD56c_PS_V1-rescue.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="my_symbols">
+      <uri>/Users/ludwin/Library/CloudStorage/Dropbox/Ludwin/Elektronik/KICAD/Library/my_symbols/my_symbols.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+12V">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J2" pin="1" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="L1" pin="3" pinfunction="3" pintype="input"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U7" pin="3" pinfunction="VI" pintype="power_in"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J2" pin="3" pintype="passive"/>
+      <node ref="M1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="E" pintype="open_emitter"/>
+      <node ref="Q2" pin="3" pinfunction="E" pintype="open_emitter"/>
+      <node ref="RV1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="3" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="RV1" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(D2-A)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="5" name="Net-(D3-K)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="M1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="SW1" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(Q1-B)">
+      <node ref="Q1" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="Q2" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="Pin1" pintype="input"/>
+      <node ref="U2" pin="1" pinfunction="Pin1" pintype="input"/>
+    </net>
+    <net code="7" name="Net-(Q1-C)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="Q1" pin="2" pinfunction="C" pintype="open_collector"/>
+      <node ref="Q2" pin="2" pinfunction="C" pintype="open_collector"/>
+      <node ref="U3" pin="1" pinfunction="Pin1" pintype="input"/>
+      <node ref="U4" pin="1" pinfunction="Pin1" pintype="input"/>
+      <node ref="U5" pin="1" pinfunction="Pin1" pintype="input"/>
+      <node ref="U6" pin="1" pinfunction="Pin1" pintype="input"/>
+    </net>
+    <net code="8" name="Net-(U7-ADJ)">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="ADJ" pintype="input"/>
+    </net>
+    <net code="9" name="unconnected-(J2-Pad2)">
+      <node ref="J2" pin="2" pintype="passive+no_connect"/>
+    </net>
+    <net code="10" name="unconnected-(SW1A-A-Pad1)">
+      <node ref="SW1" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+  </nets>
+</export>
