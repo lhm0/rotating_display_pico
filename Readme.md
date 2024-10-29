@@ -117,7 +117,7 @@ The distribution of the electronic circuitry between the two assemblies is shown
 
 ## 5. Power supply board
 
-The core of the power supply is a Royer converter for wireless power transfer. An excellent article on the operation and design of the circuit can be found at Mikrocontroller.net (German) and the circuit was taken from there. Two transistors are alternately switched (push pull operation) so that a current flows through one half of the coil at a time. The coil belongs to a resonant circuit with a resonant frequency of about 120 kHz. The control voltage for the transistors is obtained via a coupling coil (**figure 10**). The secondary coil is located below the display board (see **figure 6**, right).
+The core of the power supply is a Royer converter for wireless power transfer. An excellent article on the operation and design of the circuit can be found at [Mikrocontroller.net](https://www.mikrocontroller.net/articles/Royer_Converter) (German) and the circuit was taken from there. Two transistors are alternately switched (push pull operation) so that a current flows through one half of the coil at a time. The coil belongs to a resonant circuit with a resonant frequency of about 120 kHz. The control voltage for the transistors is obtained via a coupling coil (**figure 10**). The secondary coil is located below the display board (see **figure 6**, right).
 
 The Royer circuit uses very few components. However, the coil is quite complex. It is a bifilar coil, where the two halves are interleaved. In addition, the coupling coil must be connected with the correct polarity, otherwise the two transistors will be destroyed. In the early stages of development, the coil was wound with copper wire. However, this solution was quite difficult to reproduce, so in the final design the coils (bifilar primary coil, coupling coil, secondary coil) were implemented as a printed circuit (see **figure 5**, left and **figure 6** right). The circuit was found to have surprisingly high and perfectly adequate transmission efficiency, although the quality factor of the printed coils is inevitably compromised. The Royer converter with the printed coil assembly is absolutely safe to rebuild. It is supplied with 12 V. 
 
@@ -125,7 +125,7 @@ The Royer circuit uses very few components. However, the coil is quite complex. 
   <img src="images/figure10.jpeg" style="display: inline-block; margin: 20px; max-width: 600px">
 </p>
 
-**Figure 10: Royer converter**. Compare Mikrocontroller.net for reference.
+**Figure 10: Royer converter**. Compare [Mikrocontroller.net](https://www.mikrocontroller.net/articles/Royer_Converter) for reference.
 
 
 There is also a circuit for supplying the CD motor on the power supply board. By means of an adjustable voltage regulator, a variable voltage between 1.7V and 6.0V is generated. It can be adjusted via a potentiometer. The voltage range corresponds to the specified operating range of the CD motor. The supply of the motor can be interrupted with a switch, for example to allow programming of the microcontrollers.
