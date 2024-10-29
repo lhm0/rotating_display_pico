@@ -131,10 +131,49 @@ The Royer circuit uses very few components. However, the coil is quite complex. 
 There is also a circuit for supplying the CD motor on the power supply board. By means of an adjustable voltage regulator, a variable voltage between 1.7V and 6.0V is generated. It can be adjusted via a potentiometer. The voltage range corresponds to the specified operating range of the CD motor. The supply of the motor can be interrupted with a switch, for example to allow programming of the microcontrollers.
 
 ## 6. Display Board
+The 56 LEDs of the display are arranged in a matrix with 7 columns and 8 rows (**figure 11**). The microcontroller activates the columns successively and sets the rows for each columns as needed.
 
+The columns are activated by connecting them to +5V by means of a p-channel MOSFET, each. The control of the MOSFETs needs 5V logic (+5V = off, 0V = on), while the Raspberry pi pico operates with 3.3V logic. Therefore, levels need to be shifted, which is done with the 74HCT138. The circuit is a 3 bit decoder. One of the 8 outputs can be selected by setting the 3 inputs accordingly. Only the selected output goes to "L", while all other outputs are "H". This ensures, that only one LED column can be selected at a time.
 
+The 8 rows are activated by means of a Darlington transistor each. The transistors are arraged in an array (ULN2803). The resistors set the LED current to about 60 mA. This is well with the [specification of the LEDs](https://www.led1.de/shop/files/Datenblaetter/Rechteckig/WEHWW02-D1M.pdf).
 
+<p align="center"> 
+  <img src="images/figure11.jpeg" style="display: inline-block; margin: 20px; max-width: 600px">
+</p>
 
+**Figure 11: Schematic of the Display Board**
+
+The timing of the display is critical in order to generate stable largely flicker free grey level images. **Figure 12** shows the timing sequence. The display rotates with a frequency of up to 10 Hz. The Hall sensor generates a reference signal once it is within reach of the static magnet. Within the 100 ms per revolution, 240 lines with 56 pixels each are successively displayed. Each line will be displayed for 100ms/240 = 420µs. In order to generate grey levels, each pixel is split into 8 "sub pixels". If all of the subpixels are "on", the intensity of the pixel will be maximal, if 4 subpixels are "on" and 4 subpixels are "off", intensity of the pixel will be medium, and if all subpixels are "off", intensity will be zero. The time per subpixel is 420µs/8 = 52µs. Within this time, the multiplexing of the LEDs has to happen. Each column of the matrix will be displayed for 52µs/7 = 7.5µs. 
+
+<p align="center"> 
+  <img src="images/figure12.jpeg" style="display: inline-block; margin: 20px; max-width: 600px">
+</p>
+
+**Figure 12: Timing of the LED control.** Within the time per revolution of 100ms, 240 lines with 8 grey levels are displayed. 
+
+The high speed of the multiplexing has quite some implications. The electronics and its setup needs to allow for very short and steep 60 mA current pulses. In order to manage electromagnetic interference, a 4 layer board has been used. The two inner layers are grounding planes, all vias have a grounding "companion", in order to ensure [proper current return paths](https://www.youtube.com/live/ySuUZEjARPY?si=sn-svxhxvuI3ehGK). Furthermore, the microcontroller needs to control the output lines in a strict and very fast time regime.
+
+Fortunately, the RP2040 microcontroller has a powerful unit for controlling the input and outputs (PIO = programmable IO) (**figure 13**). This unit is used to manage the multiplexing and decouple its timing from the processor and its interrupts as much as possible. The solution ensures not only the necessary very high speed for the multiplexing, but also generates a stable time regime.
+
+<p align="center"> 
+  <img src="images/figure13.jpeg" style="display: inline-block; margin: 20px; max-width: 600px">
+</p>
+
+**Figure 13: RP2040 programmable IO (PIO).** The unit allows for fast multiplexing of the LEDs. 
+
+The full circuit diagram of the display board is shown in **figure 14**. All details can be obtained from the [GitHub repository](https://github.com/lhm0/rotating_display_pico/tree/master).
+
+<p align="center"> 
+  <img src="images/figure14a.jpeg" style="display: inline-block; margin: 20px; max-width: 600px">
+</p>
+
+<p align="center"> 
+  <img src="images/figure14b.jpeg" style="display: inline-block; margin: 20px; max-width: 600px">
+</p>
+
+**Figure 14: Circuit diagram of the display board** 
+
+ 
 
 
 
