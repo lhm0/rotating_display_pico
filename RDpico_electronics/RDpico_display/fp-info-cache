@@ -1,4 +1,4 @@
-22401137262030675
+22402910812290511
 3rdparty
 DIP254P762X533-18
 
@@ -92429,6 +92429,13 @@ TO220_horizontal
 3
 my_footprints
 TO220_vertikal
+
+
+0
+3
+3
+my_footprints
+TO220_vertikal_BCE
 
 
 0
